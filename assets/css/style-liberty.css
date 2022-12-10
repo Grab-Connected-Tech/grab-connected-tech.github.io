@@ -10165,17 +10165,19 @@ nav ul li a:hover {
     position: relative;
     z-index: 1;
     overflow: hidden;
-    background: #ffffff;
-    background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0.92)), url(../images/banner.jpg);
+    background: #f7f7f7;
+    /* background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0.92)), url(../images/banner.jpg); */
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
     display: grid;
     align-items: center;
-    padding-top: 5rem; }
-  .w3l-index1 .content-photo img {
-    transform: rotate(180deg); }
+    padding-top: 5rem; 
+    padding-bottom: 5rem; 
+  }
+  /* .w3l-index1 .content-photo img {
+    transform: rotate(180deg); } */
   .w3l-index1 .content-left h3 {
     font-size: 50px;
     line-height: 57.5px;
