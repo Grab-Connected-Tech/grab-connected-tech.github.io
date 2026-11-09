@@ -5,8 +5,32 @@
     }
   },
   "rewrites": [
-    { "source": "/assets/(.*)", "destination": "/assets/$1" },
-    { "source": "/api/(.*)", "destination": "/api/$1" },
-    { "source": "/(.*)", "destination": "/$1.html" }
+    {
+      "source": "/.well-known/(.*)",
+      "destination": "/.well-known/$1"
+    },
+    {
+      "source": "/assets/(.*)",
+      "destination": "/assets/$1"
+    },
+    {
+      "source": "/api/(.*)",
+      "destination": "/api/$1"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/$1.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/.well-known/appspecific/com.tesla.3p.public-key.pem",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/plain; charset=utf-8"
+        }
+      ]
+    }
   ]
 }
