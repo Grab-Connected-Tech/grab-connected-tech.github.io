@@ -1,9 +1,4 @@
 {
-  "functions": {
-    "api/generate-workout.js": {
-      "maxDuration": 300
-    }
-  },
   "rewrites": [
     {
       "source": "/.well-known/(.*)",
